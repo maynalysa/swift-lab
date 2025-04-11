@@ -26,15 +26,17 @@ struct SwiftUIExamplesView: View {
                         title: "Floating Effect"
                     ) {
                         DemoFloatingEffectView()
-                            .frame(width:  250, height: 250)
+                            .frame(width:  300, height: 200)
                     }
 
                     CardView(
                         title: "Neon Effect"
                     ) {
                         DemoNeonEffectView()
-                            .frame(width:  250, height: 250)
+                            .frame(width:  300, height: 250)
                     }
+                    
+                    Spacer()
                 }
             }
             .padding()

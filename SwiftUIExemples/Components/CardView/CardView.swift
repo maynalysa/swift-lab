@@ -41,7 +41,7 @@ struct CardView<Content: View>: View {
             Text(title)
                 .font(.title)
                 .fontWeight(.bold)
-                .foregroundColor(.primary)
+                .foregroundColor(.white)
                 .padding(.horizontal)
             
             // Optional Subtitle
@@ -57,7 +57,7 @@ struct CardView<Content: View>: View {
                 .padding(.horizontal)
         }
         .padding(.vertical)
-        .background(Color.white)
+        .background(Color.black)
         .cornerRadius(12)
         .shadow(
             color: Color.black.opacity(shadowOpacity),
@@ -72,5 +72,6 @@ struct CardView<Content: View>: View {
 #Preview {
     CardView(title: "This is an example") {
         Text("You can literally put anything here 🙃")
+            .foregroundColor(.white)
     }
 }

@@ -15,7 +15,7 @@ struct DemoNeonEffectView: View {
             glowRadius: 15,
             glowIntensity: 5
         )
-        .neonPulse(color: .yellow, intensity: 1.2, speed: 0.8)
+        .neonPulse(color: .yellow, intensity: 1.2, speed: 2)
         .frame(width: 150, height: 150)
     }
 }

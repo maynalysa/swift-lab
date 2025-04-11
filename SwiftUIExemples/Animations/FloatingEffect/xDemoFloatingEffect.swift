@@ -11,7 +11,8 @@ import SwiftUI
 struct DemoFloatingEffectView: View {
     var body: some View {
         Image(systemName: "star.fill")
-            .floating(height: 15, speed: 0.9)
+            .floating(height: 15, speed: 5)
+            .foregroundColor(.red)
     }
 }
 
