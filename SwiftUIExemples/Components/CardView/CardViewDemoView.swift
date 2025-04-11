@@ -1,6 +1,6 @@
 //
 //  CardViewDemoView.swift
-//  SwiftUIExemples
+//  SwiftUIExamples
 //
 //  Created by mayane ndoumbe mbow on 11/04/2025.
 //
