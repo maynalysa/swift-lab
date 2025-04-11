@@ -9,6 +9,6 @@ import SwiftUI
 
 #Preview {
     CardView(title: "This is an example") {
-        FloatingEffectDemoView()
+        DemoFloatingEffectView()
     }
 }

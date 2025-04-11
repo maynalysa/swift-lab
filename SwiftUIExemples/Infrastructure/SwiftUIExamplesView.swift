@@ -25,8 +25,15 @@ struct SwiftUIExamplesView: View {
                     CardView(
                         title: "Floating Effect"
                     ) {
-                        FloatingEffectDemoView()
-                            .frame(height: 100)
+                        DemoFloatingEffectView()
+                            .frame(width:  250, height: 250)
+                    }
+
+                    CardView(
+                        title: "Neon Effect"
+                    ) {
+                        DemoNeonEffectView()
+                            .frame(width:  250, height: 250)
                     }
                 }
             }
