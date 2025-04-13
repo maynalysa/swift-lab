@@ -30,19 +30,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B4CD7A3B2DA90B9A00BBEBB7 /* SwiftUIExemples */ = {
+		B4CD7A3B2DA90B9A00BBEBB7 /* SwiftLab */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUIExemples;
+			path = SwiftLab;
 			sourceTree = "<group>";
 		};
-		B4CD7A4C2DA90B9C00BBEBB7 /* SwiftUIExemplesTests */ = {
+		B4CD7A4C2DA90B9C00BBEBB7 /* SwiftLabTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUIExemplesTests;
+			path = SwiftLabTests;
 			sourceTree = "<group>";
 		};
-		B4CD7A562DA90B9C00BBEBB7 /* SwiftUIExemplesUITests */ = {
+		B4CD7A562DA90B9C00BBEBB7 /* SwiftLabUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUIExemplesUITests;
+			path = SwiftLabUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		B4CD7A302DA90B9A00BBEBB7 = {
 			isa = PBXGroup;
 			children = (
-				B4CD7A3B2DA90B9A00BBEBB7 /* SwiftUIExemples */,
-				B4CD7A4C2DA90B9C00BBEBB7 /* SwiftUIExemplesTests */,
-				B4CD7A562DA90B9C00BBEBB7 /* SwiftUIExemplesUITests */,
+				B4CD7A3B2DA90B9A00BBEBB7 /* SwiftLab */,
+				B4CD7A4C2DA90B9C00BBEBB7 /* SwiftLabTests */,
+				B4CD7A562DA90B9C00BBEBB7 /* SwiftLabUITests */,
 				B4CD7A3A2DA90B9A00BBEBB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,7 +109,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B4CD7A3B2DA90B9A00BBEBB7 /* SwiftUIExemples */,
+				B4CD7A3B2DA90B9A00BBEBB7 /* SwiftLab */,
 			);
 			name = SwiftUIExemples;
 			packageProductDependencies = (
@@ -132,7 +132,7 @@
 				B4CD7A4B2DA90B9C00BBEBB7 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B4CD7A4C2DA90B9C00BBEBB7 /* SwiftUIExemplesTests */,
+				B4CD7A4C2DA90B9C00BBEBB7 /* SwiftLabTests */,
 			);
 			name = SwiftUIExemplesTests;
 			packageProductDependencies = (
@@ -155,7 +155,7 @@
 				B4CD7A552DA90B9C00BBEBB7 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B4CD7A562DA90B9C00BBEBB7 /* SwiftUIExemplesUITests */,
+				B4CD7A562DA90B9C00BBEBB7 /* SwiftLabUITests */,
 			);
 			name = SwiftUIExemplesUITests;
 			packageProductDependencies = (
@@ -187,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B4CD7A342DA90B9A00BBEBB7 /* Build configuration list for PBXProject "SwiftUIExemples" */;
+			buildConfigurationList = B4CD7A342DA90B9A00BBEBB7 /* Build configuration list for PBXProject "SwiftLab" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -542,7 +542,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B4CD7A342DA90B9A00BBEBB7 /* Build configuration list for PBXProject "SwiftUIExemples" */ = {
+		B4CD7A342DA90B9A00BBEBB7 /* Build configuration list for PBXProject "SwiftLab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4CD7A5B2DA90B9C00BBEBB7 /* Debug */,

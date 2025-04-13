@@ -1,13 +1,13 @@
 //
-//  SwiftUIExamplesView.swift
-//  SwiftUIExamples
+//  SwiftLabView.swift
+//  SwiftLab
 //
 //  Created by mayane ndoumbe mbow on 11/04/2025.
 //
 
 import SwiftUI
 
-struct SwiftUIExamplesView: View {
+struct SwiftLabView: View {
     var body: some View {
         ScrollView {
             VStack {
@@ -45,5 +45,5 @@ struct SwiftUIExamplesView: View {
 }
 
 #Preview {
-    SwiftUIExamplesView()
+    SwiftLabView()
 }

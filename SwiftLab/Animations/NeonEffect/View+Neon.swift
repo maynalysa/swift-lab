@@ -1,6 +1,6 @@
 //
 //  View+Neon.swift
-//  SwiftUIExemples
+//  SwiftLab
 //
 //  Created by mayane ndoumbe mbow on 11/04/2025.
 //
