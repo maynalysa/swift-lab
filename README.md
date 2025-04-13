@@ -1,29 +1,54 @@
-# 📱 swift-lab
+# 🧪📱 swift-lab
 
-A curated collection of SwiftUI code snippets and UI patterns I’m building and sharing along my app development journey.  
-This is both a personal reference and a resource for fellow developers looking for clean, reusable SwiftUI examples.
+[![Swift](https://img.shields.io/badge/swift-5.9-orange?logo=swift)](https://swift.org)
+[![Last Commit](https://img.shields.io/github/last-commit/yourhandle/swift-lab)](https://github.com/yourhandle/swift-lab/commits)
+[![License](https://img.shields.io/github/license/yourhandle/swift-lab)](./LICENSE)
+
+A growing lab of Swift and SwiftUI experiments, patterns, and reusable components I’m building and sharing along my app development journey. 
+This is both a personal reference and a resource for fellow developers looking for clean, reusable Swift/SwiftUI examples.
 
 ---
 
 ## ✨ Why this repo?
 
-As I build real-world apps using **SwiftUI + Clean Architecture + VIPER**, I often create small, focused examples that solve specific UI or architectural needs. Instead of letting them get lost in various projects, I decided to gather them here — organized, documented, and ready to reuse.
+As I build real-world apps using **SwiftUI + Clean Architecture + VIPER**, I often create small, focused examples that solve specific UI or architectural needs.
+Instead of letting them get lost in various projects, I decided to gather them here — organized, documented, and ready to reuse.
 
 ---
 
-## 📦 What's inside?
+## 🔬 What you’ll find
 
-Each folder contains:
-- ✅ A SwiftUI view or feature (component, animation, transition, etc.)
-- 🔍 A minimal preview for quick testing
-- 🧠 Comments & insights about usage or trade-offs
+- 💡 UI animations (e.g. floating, neon glow, shimmer, etc.)
+- ⚙️ Architecture-ready utilities and design patterns
+- 🧱 Reusable SwiftUI components (buttons, loaders, cards, etc.)
+- 📐 Layout tricks and interaction patterns
+- 🧪 Code experiments with Swift and Apple frameworks
+
+Everything is:
+- ✅ 100% native Swift / SwiftUI
+- ♻️ Reusable and modular
+- 🧠 Easy to plug into real projects
+
+---
+
+## 🤖 AI-Enhanced Development
+
+Several components and code patterns in this repo were built and refined in minutes using **Claude 3.7** and **ChatGPT 4**.
+
+> I use AI tools to:
+> - Brainstorm ideas and UI variations
+> - Speed up syntax scaffolding
+> - Refactor or simplify logic
+> - Get instant feedback on SwiftUI layouts
+
+AI has been a huge boost in turning ideas into polished, reusable code faster than ever.
 
 ---
 
 ## 🗂 Examples So Far
 
-//- `FloatingAnimationView` – A smooth floating animation for icons or buttons
-
+- FloatingAnimation – A smooth floating animation for any View
+- NoenEffectAnimation – A smooth neon animation for either a Text or an Image
 *(More coming soon – this repo grows as I build.)*
 
 ---
