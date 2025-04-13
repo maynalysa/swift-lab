@@ -66,7 +66,7 @@ AI has been a huge boost in turning ideas into polished, reusable code faster th
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/swiftui-exemples.git
+   git clone https://github.com/maynalysa/swift-lab.git
 2. Open SwiftUI-Exemples.xcodeproj
 3. Browse and run any file using the canvas preview or the simulator
 
