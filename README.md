@@ -1,8 +1,8 @@
 # 🧪📱 swift-lab
 
 [![Swift](https://img.shields.io/badge/swift-5.9-orange?logo=swift)](https://swift.org)
-[![Last Commit](https://img.shields.io/github/last-commit/yourhandle/swift-lab)](https://github.com/yourhandle/swift-lab/commits)
-[![License](https://img.shields.io/github/license/yourhandle/swift-lab)](./LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/yourhandle/swift-lab)](https://github.com/maynalysa/swift-lab/commits)
+[![License](https://img.shields.io/github/license/maynalysa/swift-lab)](./LICENSE)
 
 A growing lab of Swift and SwiftUI experiments, patterns, and reusable components I’m building and sharing along my app development journey. 
 This is both a personal reference and a resource for fellow developers looking for clean, reusable Swift/SwiftUI examples.
