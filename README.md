@@ -1,4 +1,4 @@
-# 📱 swiftui-exemples
+# 📱 siwft-swiftui-examples
 
 A curated collection of SwiftUI code snippets and UI patterns I’m building and sharing along my app development journey.  
 This is both a personal reference and a resource for fellow developers looking for clean, reusable SwiftUI examples.
