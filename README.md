@@ -58,7 +58,7 @@ AI has been a huge boost in turning ideas into polished, reusable code faster th
 - Keep every snippet **self-contained** and **easy to understand**
 - Follow **SwiftUI best practices** (declarative, composable, testable)
 - Apply **Clean Architecture principles** where relevant (VIPER, DI, etc.)
-- Empower others to build faster and better with SwiftUI
+- Empower others to build faster and better with Swift / SwiftUI
 
 ---
 
