@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B4CD7A392DA90B9A00BBEBB7 /* SwiftUIExemples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIExemples.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4CD7A492DA90B9C00BBEBB7 /* SwiftUIExemplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIExemplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4CD7A532DA90B9C00BBEBB7 /* SwiftUIExemplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIExemplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CD7A392DA90B9A00BBEBB7 /* SwiftLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CD7A492DA90B9C00BBEBB7 /* SwiftLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CD7A532DA90B9C00BBEBB7 /* SwiftLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -85,9 +85,9 @@
 		B4CD7A3A2DA90B9A00BBEBB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4CD7A392DA90B9A00BBEBB7 /* SwiftUIExemples.app */,
-				B4CD7A492DA90B9C00BBEBB7 /* SwiftUIExemplesTests.xctest */,
-				B4CD7A532DA90B9C00BBEBB7 /* SwiftUIExemplesUITests.xctest */,
+				B4CD7A392DA90B9A00BBEBB7 /* SwiftLab.app */,
+				B4CD7A492DA90B9C00BBEBB7 /* SwiftLabTests.xctest */,
+				B4CD7A532DA90B9C00BBEBB7 /* SwiftLabUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B4CD7A382DA90B9A00BBEBB7 /* SwiftUIExemples */ = {
+		B4CD7A382DA90B9A00BBEBB7 /* SwiftLab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4CD7A5D2DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftUIExemples" */;
+			buildConfigurationList = B4CD7A5D2DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftLab" */;
 			buildPhases = (
 				B4CD7A352DA90B9A00BBEBB7 /* Sources */,
 				B4CD7A362DA90B9A00BBEBB7 /* Frameworks */,
@@ -111,16 +111,16 @@
 			fileSystemSynchronizedGroups = (
 				B4CD7A3B2DA90B9A00BBEBB7 /* SwiftLab */,
 			);
-			name = SwiftUIExemples;
+			name = SwiftLab;
 			packageProductDependencies = (
 			);
 			productName = SwiftUIExemples;
-			productReference = B4CD7A392DA90B9A00BBEBB7 /* SwiftUIExemples.app */;
+			productReference = B4CD7A392DA90B9A00BBEBB7 /* SwiftLab.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B4CD7A482DA90B9C00BBEBB7 /* SwiftUIExemplesTests */ = {
+		B4CD7A482DA90B9C00BBEBB7 /* SwiftLabTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4CD7A602DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftUIExemplesTests" */;
+			buildConfigurationList = B4CD7A602DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftLabTests" */;
 			buildPhases = (
 				B4CD7A452DA90B9C00BBEBB7 /* Sources */,
 				B4CD7A462DA90B9C00BBEBB7 /* Frameworks */,
@@ -134,16 +134,16 @@
 			fileSystemSynchronizedGroups = (
 				B4CD7A4C2DA90B9C00BBEBB7 /* SwiftLabTests */,
 			);
-			name = SwiftUIExemplesTests;
+			name = SwiftLabTests;
 			packageProductDependencies = (
 			);
 			productName = SwiftUIExemplesTests;
-			productReference = B4CD7A492DA90B9C00BBEBB7 /* SwiftUIExemplesTests.xctest */;
+			productReference = B4CD7A492DA90B9C00BBEBB7 /* SwiftLabTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B4CD7A522DA90B9C00BBEBB7 /* SwiftUIExemplesUITests */ = {
+		B4CD7A522DA90B9C00BBEBB7 /* SwiftLabUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4CD7A632DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftUIExemplesUITests" */;
+			buildConfigurationList = B4CD7A632DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftLabUITests" */;
 			buildPhases = (
 				B4CD7A4F2DA90B9C00BBEBB7 /* Sources */,
 				B4CD7A502DA90B9C00BBEBB7 /* Frameworks */,
@@ -157,11 +157,11 @@
 			fileSystemSynchronizedGroups = (
 				B4CD7A562DA90B9C00BBEBB7 /* SwiftLabUITests */,
 			);
-			name = SwiftUIExemplesUITests;
+			name = SwiftLabUITests;
 			packageProductDependencies = (
 			);
 			productName = SwiftUIExemplesUITests;
-			productReference = B4CD7A532DA90B9C00BBEBB7 /* SwiftUIExemplesUITests.xctest */;
+			productReference = B4CD7A532DA90B9C00BBEBB7 /* SwiftLabUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -201,9 +201,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B4CD7A382DA90B9A00BBEBB7 /* SwiftUIExemples */,
-				B4CD7A482DA90B9C00BBEBB7 /* SwiftUIExemplesTests */,
-				B4CD7A522DA90B9C00BBEBB7 /* SwiftUIExemplesUITests */,
+				B4CD7A382DA90B9A00BBEBB7 /* SwiftLab */,
+				B4CD7A482DA90B9C00BBEBB7 /* SwiftLabTests */,
+				B4CD7A522DA90B9C00BBEBB7 /* SwiftLabUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,12 +279,12 @@
 /* Begin PBXTargetDependency section */
 		B4CD7A4B2DA90B9C00BBEBB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B4CD7A382DA90B9A00BBEBB7 /* SwiftUIExemples */;
+			target = B4CD7A382DA90B9A00BBEBB7 /* SwiftLab */;
 			targetProxy = B4CD7A4A2DA90B9C00BBEBB7 /* PBXContainerItemProxy */;
 		};
 		B4CD7A552DA90B9C00BBEBB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B4CD7A382DA90B9A00BBEBB7 /* SwiftUIExemples */;
+			target = B4CD7A382DA90B9A00BBEBB7 /* SwiftLab */;
 			targetProxy = B4CD7A542DA90B9C00BBEBB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -416,7 +416,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIExemples/Infrastructure/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftLab/Infrastructure/Preview Content\"";
 				DEVELOPMENT_TEAM = 755TF8H6MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,7 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIExemples/Infrastructure/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftLab/Infrastructure/Preview Content\"";
 				DEVELOPMENT_TEAM = 755TF8H6MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -551,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4CD7A5D2DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftUIExemples" */ = {
+		B4CD7A5D2DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftLab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4CD7A5E2DA90B9C00BBEBB7 /* Debug */,
@@ -560,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4CD7A602DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftUIExemplesTests" */ = {
+		B4CD7A602DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftLabTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4CD7A612DA90B9C00BBEBB7 /* Debug */,
@@ -569,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4CD7A632DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftUIExemplesUITests" */ = {
+		B4CD7A632DA90B9C00BBEBB7 /* Build configuration list for PBXNativeTarget "SwiftLabUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4CD7A642DA90B9C00BBEBB7 /* Debug */,
