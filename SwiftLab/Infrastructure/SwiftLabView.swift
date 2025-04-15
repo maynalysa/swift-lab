@@ -11,26 +11,26 @@ struct SwiftLabView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text("Welcome To SwiftUI examples")
-                Text("👇🏾 👇🏾👇🏾")
+                Text("")
+                Text("")
                 
                 
                 // DEMOS
-                Text("Animations & Components")
+                Text("")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding()
                 
                 VStack(alignment: .center, spacing: .Space.m) {
                     CardView(
-                        title: "Floating Effect"
+                        title: ""
                     ) {
                         DemoFloatingEffectView()
                             .frame(width:  300, height: 200)
                     }
 
                     CardView(
-                        title: "Neon Effect"
+                        title: ""
                     ) {
                         DemoNeonEffectView()
                             .frame(width:  300, height: 250)
