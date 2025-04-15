@@ -16,8 +16,6 @@ struct DemoFloatingEffectView: View {
     }
 }
 
-
 #Preview {
     DemoFloatingEffectView()
 }
-

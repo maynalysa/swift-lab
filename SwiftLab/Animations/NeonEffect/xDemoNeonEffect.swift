@@ -20,7 +20,6 @@ struct DemoNeonEffectView: View {
     }
 }
 
-
 #Preview {
     DemoNeonEffectView()
 }

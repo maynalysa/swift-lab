@@ -21,7 +21,6 @@ extension View {
     }
 }
 
-
 struct NeonPulseModifier: ViewModifier {
     let color: Color
     let intensity: Double

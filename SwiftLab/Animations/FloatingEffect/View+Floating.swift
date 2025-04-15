@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 extension View {
     func floating(height: CGFloat = 10, speed: Double = 1.0) -> some View {
         self.modifier(FloatingModifier(height: height, speed: speed))

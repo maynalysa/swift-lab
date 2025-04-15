@@ -14,7 +14,6 @@ struct SwiftLabView: View {
                 Text("")
                 Text("")
                 
-                
                 // DEMOS
                 Text("")
                     .font(.largeTitle)
@@ -26,14 +25,14 @@ struct SwiftLabView: View {
                         title: ""
                     ) {
                         DemoFloatingEffectView()
-                            .frame(width:  300, height: 200)
+                            .frame(width: 300, height: 200)
                     }
 
                     CardView(
                         title: ""
                     ) {
                         DemoNeonEffectView()
-                            .frame(width:  300, height: 250)
+                            .frame(width: 300, height: 250)
                     }
                     
                     Spacer()
