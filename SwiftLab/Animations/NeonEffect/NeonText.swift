@@ -35,11 +35,11 @@ struct NeonText: View {
     var body: some View {
         ZStack {
             // Multiple glow layers for neon effect
-            ForEach(0..<glowIntensity, id: \.self) { i in
+            ForEach(0..<glowIntensity, id: \.self) { intensity in
                 Text(text)
                     .font(.system(size: fontSize, weight: fontWeight))
                     .foregroundColor(color)
-                    .blur(radius: glowRadius * CGFloat(i) / CGFloat(glowIntensity))
+                    .blur(radius: glowRadius * CGFloat(intensity) / CGFloat(glowIntensity))
                     .opacity(1.0 / CGFloat(glowIntensity))
             }
             

@@ -1,0 +1,19 @@
+included:
+  - SwiftLab
+
+excluded:
+  - Resources
+  - Generated
+  - SwiftLabTests
+  - SwiftLabUITests
+
+# Optional: Define rules and their severity
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+
+opt_in_rules:
+  - attributes
+  - closure_end_indentation
+
+reporter: xcode

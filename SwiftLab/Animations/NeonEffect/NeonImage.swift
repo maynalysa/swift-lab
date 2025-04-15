@@ -28,11 +28,11 @@ struct NeonImageView: View {
     var body: some View {
         ZStack {
             // Multiple layers of the same image with increasing blur to create neon effect
-            ForEach(0..<glowIntensity, id: \.self) { i in
+            ForEach(0..<glowIntensity, id: \.self) { intensity in
                 image
                     .resizable()
                     .scaledToFit()
-                    .blur(radius: glowRadius * CGFloat(i) / CGFloat(glowIntensity))
+                    .blur(radius: glowRadius * CGFloat(intensity) / CGFloat(glowIntensity))
                     .opacity(1.0 / CGFloat(glowIntensity))
             }
             
