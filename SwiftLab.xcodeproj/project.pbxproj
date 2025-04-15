@@ -103,7 +103,6 @@
 				B4CD7A362DA90B9A00BBEBB7 /* Frameworks */,
 				B4CD7A372DA90B9A00BBEBB7 /* Resources */,
 				B4CD7AA02DA9110400BBEBB7 /* ShellScript */,
-				B4CD7CF32DAE3CF000BBEBB7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,23 +250,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed\"\nfi\n";
-		};
-		B4CD7CF32DAE3CF000BBEBB7 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
