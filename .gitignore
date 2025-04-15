@@ -1,1 +1,27 @@
-SwiftLab.xcodeproj/project.xcworkspace/xcuserdata/mayane.xcuserdatad/UserInterfaceState.xcuserstate
+# Xcode
+build/
+DerivedData/
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+
+# SwiftPM
+/.build/
+/Packages
+Package.resolved
+
+# Cocoapods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Others
+*.DS_Store
+*.log
+.env
