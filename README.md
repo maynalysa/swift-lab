@@ -78,7 +78,7 @@ If you find something helpful, feel free to star 🌟 the repo or reach out!
 I'm sharing these examples as part of my journey building real-world SwiftUI apps — feel free to follow along, ask questions, or just say hi!
 
 - 💼 [LinkedIn – Mayane Ndoumbe Mbow](https://www.linkedin.com/in/mayane-ndoumbe-mbow-56a833183/)
-- 🧵 [X (Twitter) – @themaynalysa](https://x.com/themaynalysa) *(replace with your actual handle if you want to include it)*
+- 🧵 [X (Twitter) – @themaynalysa](https://x.com/themaynalysa)
 - 📬 Reach out if you're working on something similar — I love connecting with other devs!
 
 ---
