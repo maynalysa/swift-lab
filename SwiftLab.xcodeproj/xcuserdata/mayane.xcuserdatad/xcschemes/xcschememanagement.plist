@@ -4,10 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SwiftUIExemples.xcscheme_^#shared#^_</key>
+		<key>SwiftLab.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B4CD7A382DA90B9A00BBEBB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4CD7A482DA90B9C00BBEBB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4CD7A522DA90B9C00BBEBB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

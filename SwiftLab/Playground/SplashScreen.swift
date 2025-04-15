@@ -59,7 +59,7 @@ struct AnimatedSplashScreen: View {
                     .opacity(iconOpacity)
                 
                 // App name text with animation
-                Text("HabitTracker")
+                Text("SwiftLab")
                     .font(.system(size: 36, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
                     .opacity(textOpacity)
