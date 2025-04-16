@@ -10,13 +10,13 @@ import SwiftUI
 struct NeonImageView: View {
     let image: Image
     let glowColor: Color
-    let glowRadius: CGFloat
+    let glowRadius: Double
     let glowIntensity: Int
-    
+
     init(
         image: Image,
         glowColor: Color = .pink,
-        glowRadius: CGFloat = 10,
+        glowRadius: Double = 10,
         glowIntensity: Int = 5
     ) {
         self.image = image
@@ -24,7 +24,7 @@ struct NeonImageView: View {
         self.glowRadius = glowRadius
         self.glowIntensity = glowIntensity
     }
-    
+
     var body: some View {
         ZStack {
             // Multiple layers of the same image with increasing blur to create neon effect
@@ -32,10 +32,10 @@ struct NeonImageView: View {
                 image
                     .resizable()
                     .scaledToFit()
-                    .blur(radius: glowRadius * CGFloat(intensity) / CGFloat(glowIntensity))
-                    .opacity(1.0 / CGFloat(glowIntensity))
+                    .blur(radius: glowRadius * Double(intensity) / Double(glowIntensity))
+                    .opacity(1.0 / Double(glowIntensity))
             }
-            
+
             // Original sharp image on top
             image
                 .resizable()

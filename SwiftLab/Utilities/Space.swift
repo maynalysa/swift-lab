@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+// swiftlint:disable no_cgfloat
 extension CGFloat {
     enum Space {
         // swiftlint:disable identifier_name
@@ -18,3 +20,4 @@ extension CGFloat {
         static let xxl: CGFloat = 64
     }
 }
+// swiftlint:enable no_cgfloat

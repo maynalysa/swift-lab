@@ -13,14 +13,14 @@ struct SwiftLabView: View {
             VStack {
                 Text("")
                 Text("")
-                
+
                 // DEMOS
                 Text("")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding()
-                
-                VStack(alignment: .center, spacing: .Space.m) {
+
+                VStack(spacing: .Space.m) {
                     CardView(
                         title: ""
                     ) {
@@ -34,7 +34,7 @@ struct SwiftLabView: View {
                         DemoNeonEffectView()
                             .frame(width: 300, height: 250)
                     }
-                    
+
                     Spacer()
                 }
             }

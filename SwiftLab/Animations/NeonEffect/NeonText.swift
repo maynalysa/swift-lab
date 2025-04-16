@@ -11,17 +11,17 @@ import SwiftUI
 struct NeonText: View {
     let text: String
     let color: Color
-    let fontSize: CGFloat
+    let fontSize: Double
     let fontWeight: Font.Weight
-    let glowRadius: CGFloat
+    let glowRadius: Double
     let glowIntensity: Int
-    
+
     init(
         text: String,
         color: Color = .white,
-        fontSize: CGFloat = 36,
+        fontSize: Double = 36,
         fontWeight: Font.Weight = .bold,
-        glowRadius: CGFloat = 5,
+        glowRadius: Double = 5,
         glowIntensity: Int = 5
     ) {
         self.text = text
@@ -31,7 +31,7 @@ struct NeonText: View {
         self.glowRadius = glowRadius
         self.glowIntensity = glowIntensity
     }
-    
+
     var body: some View {
         ZStack {
             // Multiple glow layers for neon effect
@@ -39,10 +39,10 @@ struct NeonText: View {
                 Text(text)
                     .font(.system(size: fontSize, weight: fontWeight))
                     .foregroundColor(color)
-                    .blur(radius: glowRadius * CGFloat(intensity) / CGFloat(glowIntensity))
-                    .opacity(1.0 / CGFloat(glowIntensity))
+                    .blur(radius: glowRadius * Double(intensity) / Double(glowIntensity))
+                    .opacity(1.0 / Double(glowIntensity))
             }
-            
+
             // Main text layer
             Text(text)
                 .font(.system(size: fontSize, weight: fontWeight))
