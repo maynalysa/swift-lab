@@ -10,8 +10,13 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
-  /// Hello, world!
-  internal static let hello = L10n.tr("Localizable", "hello", fallback: "Hello, world!")
+  /// Animations
+  internal static let animations = L10n.tr("Localizable", "animations", fallback: "Animations")
+  /// Localizable.strings
+  ///   SwiftLab
+  /// 
+  ///   Created by mayane ndoumbe mbow on 17/04/2025.
+  internal static let swiftLab = L10n.tr("Localizable", "swift-lab", fallback: "SwiftLab")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

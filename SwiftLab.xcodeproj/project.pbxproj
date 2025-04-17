@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4F2D2BF2DB0C911009FA007 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F2D2BC2DB0C911009FA007 /* Strings.swift */; };
+		B43EAF552DB1168A008D0A64 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B43EAF532DB1168A008D0A64 /* Localizable.strings */; };
+		B43EAF572DB116EE008D0A64 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43EAF562DB116EE008D0A64 /* Strings+Generated.swift */; };
+		B485B7AB2DB1177C00AD0ECA /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B485B7AA2DB1177C00AD0ECA /* Assets+Generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B43EAF542DB1168A008D0A64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B43EAF562DB116EE008D0A64 /* Strings+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		B485B7AA2DB1177C00AD0ECA /* Assets+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		B4CD7A392DA90B9A00BBEBB7 /* SwiftLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CD7A492DA90B9C00BBEBB7 /* SwiftLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CD7A532DA90B9C00BBEBB7 /* SwiftLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4F2D2BC2DB0C911009FA007 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -77,10 +81,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B43EAF392DB10491008D0A64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B43EAF442DB109D6008D0A64 /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B43EAF442DB109D6008D0A64 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				B43EAF532DB1168A008D0A64 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		B43EAF472DB10A66008D0A64 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				B485B7AA2DB1177C00AD0ECA /* Assets+Generated.swift */,
+				B43EAF562DB116EE008D0A64 /* Strings+Generated.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		B43EAF482DB10A66008D0A64 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				B43EAF472DB10A66008D0A64 /* SwiftGen */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		B4CD7A302DA90B9A00BBEBB7 = {
 			isa = PBXGroup;
 			children = (
-				B4F2D2BE2DB0C911009FA007 /* Generated */,
+				B43EAF482DB10A66008D0A64 /* Generated */,
+				B43EAF392DB10491008D0A64 /* Resources */,
 				B4CD7A3B2DA90B9A00BBEBB7 /* SwiftLab */,
 				B4CD7A4C2DA90B9C00BBEBB7 /* SwiftLabTests */,
 				B4CD7A562DA90B9C00BBEBB7 /* SwiftLabUITests */,
@@ -98,22 +136,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B4F2D2BD2DB0C911009FA007 /* SwiftGen */ = {
-			isa = PBXGroup;
-			children = (
-				B4F2D2BC2DB0C911009FA007 /* Strings.swift */,
-			);
-			path = SwiftGen;
-			sourceTree = "<group>";
-		};
-		B4F2D2BE2DB0C911009FA007 /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				B4F2D2BD2DB0C911009FA007 /* SwiftGen */,
-			);
-			path = Generated;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,6 +147,7 @@
 				B4CD7A362DA90B9A00BBEBB7 /* Frameworks */,
 				B4CD7A372DA90B9A00BBEBB7 /* Resources */,
 				B4CD7AA02DA9110400BBEBB7 /* ShellScript */,
+				B43EAF582DB11716008D0A64 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -213,9 +236,9 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
 				fr,
+				Base,
+				en,
 			);
 			mainGroup = B4CD7A302DA90B9A00BBEBB7;
 			minimizedProjectReferenceProxies = 1;
@@ -236,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43EAF552DB1168A008D0A64 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +280,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B43EAF582DB11716008D0A64 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = " export PATH=\"$PATH:/opt/homebrew/bin:/usr/local/bin\"\n if which swiftgen >/dev/null; then\n    swiftgen\n  else\n    echo \"warning: SwiftGen not installed. Run 'brew install swiftgen' or integrate through CocoaPods/SPM to install.\"\n  fi\n\n";
+		};
 		B4CD7AA02DA9110400BBEBB7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -281,7 +323,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4F2D2BF2DB0C911009FA007 /* Strings.swift in Sources */,
+				B485B7AB2DB1177C00AD0ECA /* Assets+Generated.swift in Sources */,
+				B43EAF572DB116EE008D0A64 /* Strings+Generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +356,17 @@
 			targetProxy = B4CD7A542DA90B9C00BBEBB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B43EAF532DB1168A008D0A64 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B43EAF542DB1168A008D0A64 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B4CD7A5B2DA90B9C00BBEBB7 /* Debug */ = {
