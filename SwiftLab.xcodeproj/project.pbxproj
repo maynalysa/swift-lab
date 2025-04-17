@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B4F2D2BF2DB0C911009FA007 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F2D2BC2DB0C911009FA007 /* Strings.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B4CD7A4A2DA90B9C00BBEBB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		B4CD7A392DA90B9A00BBEBB7 /* SwiftLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CD7A492DA90B9C00BBEBB7 /* SwiftLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CD7A532DA90B9C00BBEBB7 /* SwiftLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F2D2BC2DB0C911009FA007 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		B4CD7A302DA90B9A00BBEBB7 = {
 			isa = PBXGroup;
 			children = (
+				B4F2D2BE2DB0C911009FA007 /* Generated */,
 				B4CD7A3B2DA90B9A00BBEBB7 /* SwiftLab */,
 				B4CD7A4C2DA90B9C00BBEBB7 /* SwiftLabTests */,
 				B4CD7A562DA90B9C00BBEBB7 /* SwiftLabUITests */,
@@ -90,6 +96,22 @@
 				B4CD7A532DA90B9C00BBEBB7 /* SwiftLabUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B4F2D2BD2DB0C911009FA007 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				B4F2D2BC2DB0C911009FA007 /* Strings.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		B4F2D2BE2DB0C911009FA007 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				B4F2D2BD2DB0C911009FA007 /* SwiftGen */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F2D2BF2DB0C911009FA007 /* Strings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +443,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftLab/Infrastructure/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftLab/Infrastructure/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 755TF8H6MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -450,7 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftLab/Infrastructure/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftLab/Infrastructure/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 755TF8H6MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

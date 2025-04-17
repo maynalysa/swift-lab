@@ -1,9 +1,0 @@
-strings:
-  inputs:
-    - SwiftLab/Infrastructure/Resources/Localization/Localizable.strings
-  outputs:
-    - templateName: structured-swift5
-      output: SwiftLab/Infrastructure/Resources/Localization/Generated/Strings.swift
-      params:
-        enumName: L10n
-        publicAccess: true

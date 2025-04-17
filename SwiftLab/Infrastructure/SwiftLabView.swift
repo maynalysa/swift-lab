@@ -11,12 +11,17 @@ struct SwiftLabView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text("")
-                Text("")
+                Image("SwiftLab")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 75, height: 75)
 
-                // DEMOS
-                Text("")
+                Text("SwiftLab")
                     .font(.largeTitle)
+                    .fontWeight(.bold)
+
+                Text("Animations")
+                    .font(.headline)
                     .fontWeight(.bold)
                     .padding()
 
