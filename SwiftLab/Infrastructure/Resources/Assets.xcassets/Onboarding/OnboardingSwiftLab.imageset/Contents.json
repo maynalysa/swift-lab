@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "APP_CION_GRAD_MESH.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

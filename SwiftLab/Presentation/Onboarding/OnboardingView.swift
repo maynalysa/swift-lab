@@ -13,40 +13,42 @@ struct OnboardingView: View {
             // Background Gradient
             LinearGradient(
                 gradient: Gradient(colors: [
-                    Color.purple.opacity(0.7),
-                    Color.blue.opacity(0.5),
-                    Color.cyan.opacity(0.6),
-                    Color.pink.opacity(0.5)
+                    Color.purple.opacity(.Opacity.almostTranslucent),
+                    Color.blue.opacity(.Opacity.nearlyOpaque),
+                    Color.cyan.opacity(.Opacity.semiOpaque),
+                    Color.pink.opacity(.Opacity.almostTranslucent)
                 ]),
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
             .ignoresSafeArea()
 
-            VStack(spacing: 24) {
+            VStack(spacing: .Space.l + .Space.m) {
                 // Logo Image
-                Image("swiftlab_logo") // Replace with your asset name
+                Image(asset: Asset.onboardingSwiftLab)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 150, height: 150)
-                    .shadow(color: Color.pink.opacity(0.7), radius: 20)
+                    .frame(width: .Size.large, height: .Size.large)
+                    .shadow(color: Color.pink.opacity(.Opacity.nearlyOpaque), radius: .CornerRadius.pill)
+                    .floating()
+                    .neonPulse(color: .pink, intensity: 0.8)
 
                 // Title
-                Text("Welcome to")
+                Text(Lang.onboardingWelcomeTitle)
                     .font(.title)
                     .foregroundColor(.white)
                     .bold()
-                Text("SwiftLab!")
+                Text(Lang.onboardingSwiftlabSubtitle)
                     .font(.largeTitle)
                     .foregroundColor(.white)
                     .bold()
 
                 // Subtitle
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.")
+                Text(Lang.onboardingLorem)
                     .font(.body)
-                    .foregroundColor(.white.opacity(0.85))
+                    .foregroundColor(.white.opacity(.Opacity.nearlyOpaque))
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 32)
+                    .padding(.horizontal, .Space.l + .Space.m)
 
                 Spacer()
 
@@ -54,7 +56,7 @@ struct OnboardingView: View {
                 Button(action: {
                     // Handle onboarding completion
                 }) {
-                    Text("Get Started")
+                    Text(Lang.onboardingGetStartedButton)
                         .font(.headline)
                         .foregroundColor(.white)
                         .padding()
@@ -66,13 +68,13 @@ struct OnboardingView: View {
                                 endPoint: .trailing
                             )
                         )
-                        .cornerRadius(16)
-                        .shadow(color: Color.purple.opacity(0.6), radius: 10)
+                        .cornerRadius(.CornerRadius.softRound)
+                        .shadow(color: Color.purple.opacity(.Opacity.semiOpaque), radius: .CornerRadius.softRound)
                 }
-                .padding(.horizontal, 32)
-                .padding(.bottom, 40)
+                .padding(.horizontal, .Space.l + .Space.m)
+                .padding(.bottom, .Space.xl + .Space.m)
             }
-            .padding(.top, 80)
+            .padding(.top, .Space.xxl + .Space.m)
         }
     }
 }

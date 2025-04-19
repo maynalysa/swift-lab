@@ -7,3 +7,7 @@
 */
 "swift-lab" = "SwiftLab";
 "animations" = "Animations";
+"onboarding-welcome-title" = "Welcome to";
+"onboarding-swiftlab-subtitle" = "SwiftLab";
+"onboarding-lorem" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.";
+"onboarding-get-started-button"= "Get Started";

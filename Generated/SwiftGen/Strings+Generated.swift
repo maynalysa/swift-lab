@@ -12,6 +12,14 @@ import Foundation
 internal enum L10n {
   /// Animations
   internal static let animations = L10n.tr("Localizable", "animations", fallback: "Animations")
+  /// Get Started
+  internal static let onboardingGetStartedButton = L10n.tr("Localizable", "onboarding-get-started-button", fallback: "Get Started")
+  /// Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+  internal static let onboardingLorem = L10n.tr("Localizable", "onboarding-lorem", fallback: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.")
+  /// SwiftLab
+  internal static let onboardingSwiftlabSubtitle = L10n.tr("Localizable", "onboarding-swiftlab-subtitle", fallback: "SwiftLab")
+  /// Welcome to
+  internal static let onboardingWelcomeTitle = L10n.tr("Localizable", "onboarding-welcome-title", fallback: "Welcome to")
   /// Localizable.strings
   ///   SwiftLab
   /// 

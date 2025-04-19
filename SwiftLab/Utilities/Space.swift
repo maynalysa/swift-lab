@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 // swiftlint:disable no_cgfloat
 extension CGFloat {
     enum Space {
