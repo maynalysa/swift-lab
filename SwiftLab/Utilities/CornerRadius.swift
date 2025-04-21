@@ -10,7 +10,6 @@ import Foundation
 // swiftlint:disable no_cgfloat
 extension CGFloat {
     enum CornerRadius {
-        static let none: CGFloat = 0       // sharp edges
         static let square: CGFloat = 2     // almost square, but not harsh
         static let rounded: CGFloat = 8    // general-purpose soft rounding
         static let softRound: CGFloat = 12 // gentler curve

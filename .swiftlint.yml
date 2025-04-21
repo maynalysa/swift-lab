@@ -192,6 +192,10 @@ identifier_name:
   allowed_symbols:
     - '_'
   excluded:
+    - 's'
+    - 'm'
+    - 'l'
+    - 'xl'
     - 'x'
     - 'y'
     - 'z'

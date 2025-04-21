@@ -21,7 +21,7 @@ protocol NetworkServiceProtocol {
 // MARK: - Service Implementation
 struct UserService: UserServiceProtocol {
     func getCurrentUser() -> String {
-        return "JaneDoe"
+        "JaneDoe"
     }
 }
 

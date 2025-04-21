@@ -7,31 +7,15 @@
 
 import SwiftUI
 
+// MARK: - ⚠️❌⚠️❌⚠️❌⚠️❌⚠️❌ ONGOING CHANGES ⚠️❌⚠️❌⚠️❌⚠️❌⚠️❌
+// 🟢 IN PROGRESS
 struct OnboardingView: View {
     var body: some View {
         ZStack {
-            // Background Gradient
-            LinearGradient(
-                gradient: Gradient(colors: [
-                    Color.purple.opacity(.Opacity.almostTranslucent),
-                    Color.blue.opacity(.Opacity.nearlyOpaque),
-                    Color.cyan.opacity(.Opacity.semiOpaque),
-                    Color.pink.opacity(.Opacity.almostTranslucent)
-                ]),
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            .ignoresSafeArea()
+            gradientBackground
 
             VStack(spacing: .Space.l + .Space.m) {
-                // Logo Image
-                Image(asset: Asset.onboardingSwiftLab)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: .Size.large, height: .Size.large)
-                    .shadow(color: Color.pink.opacity(.Opacity.nearlyOpaque), radius: .CornerRadius.pill)
-                    .floating()
-                    .neonPulse(color: .pink, intensity: 0.8)
+                swiftLabIcon
 
                 // Title
                 Text(Lang.onboardingWelcomeTitle)
@@ -77,8 +61,31 @@ struct OnboardingView: View {
             .padding(.top, .Space.xxl + .Space.m)
         }
     }
-}
 
+    private var gradientBackground: some View {
+        LinearGradient(
+            gradient: Gradient(colors: [
+                Color.purple.opacity(.Opacity.almostTranslucent),
+                Color.blue.opacity(.Opacity.nearlyOpaque),
+                Color.cyan.opacity(.Opacity.semiOpaque),
+                Color.pink.opacity(.Opacity.almostTranslucent)
+            ]),
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing
+        )
+        .ignoresSafeArea()
+    }
+
+    private var swiftLabIcon: some View {
+        Image(asset: Asset.onboardingSwiftLab)
+            .resizable()
+            .scaledToFit()
+            .frame(width: .Size.large, height: .Size.large)
+            .shadow(color: Color.pink.opacity(.Opacity.nearlyOpaque), radius: .CornerRadius.pill)
+            .floating()
+            .neonPulse(color: .pink, intensity: 0.8)
+    }
+}
 
 #Preview {
     OnboardingView()
