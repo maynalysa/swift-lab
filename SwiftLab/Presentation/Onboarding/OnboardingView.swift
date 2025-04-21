@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-// MARK: - ⚠️❌⚠️❌⚠️❌⚠️❌⚠️❌ ONGOING CHANGES ⚠️❌⚠️❌⚠️❌⚠️❌⚠️❌
-// 🟢 IN PROGRESS
 struct OnboardingView: View {
     var body: some View {
         ZStack {
@@ -17,46 +15,13 @@ struct OnboardingView: View {
             VStack(spacing: .Space.l + .Space.m) {
                 swiftLabIcon
 
-                // Title
-                Text(Lang.onboardingWelcomeTitle)
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .bold()
-                Text(Lang.onboardingSwiftlabSubtitle)
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .bold()
+                title
 
-                // Subtitle
-                Text(Lang.onboardingLorem)
-                    .font(.body)
-                    .foregroundColor(.white.opacity(.Opacity.nearlyOpaque))
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, .Space.l + .Space.m)
+                subTitle
+
+                welcomeText
 
                 Spacer()
-
-                // Get Started Button
-                Button(action: {
-                    // Handle onboarding completion
-                }) {
-                    Text(Lang.onboardingGetStartedButton)
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(
-                            LinearGradient(
-                                gradient: Gradient(colors: [Color.purple, Color.blue]),
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .cornerRadius(.CornerRadius.softRound)
-                        .shadow(color: Color.purple.opacity(.Opacity.semiOpaque), radius: .CornerRadius.softRound)
-                }
-                .padding(.horizontal, .Space.l + .Space.m)
-                .padding(.bottom, .Space.xl + .Space.m)
             }
             .padding(.top, .Space.xxl + .Space.m)
         }
@@ -84,6 +49,51 @@ struct OnboardingView: View {
             .shadow(color: Color.pink.opacity(.Opacity.nearlyOpaque), radius: .CornerRadius.pill)
             .floating()
             .neonPulse(color: .pink, intensity: 0.8)
+    }
+
+    private var title: some View {
+        Text(Lang.onboardingWelcomeTitle)
+            .font(.title)
+            .foregroundColor(.white)
+            .bold()
+    }
+
+    private var subTitle: some View {
+        Text(Lang.onboardingSwiftlabSubtitle)
+            .font(.largeTitle)
+            .foregroundColor(.white)
+            .bold()
+    }
+
+    private var welcomeText: some View {
+        Text(Lang.onboardingLorem)
+            .font(.body)
+            .foregroundColor(.white.opacity(.Opacity.nearlyOpaque))
+            .multilineTextAlignment(.center)
+            .padding(.horizontal, .Space.l + .Space.m)
+    }
+
+    private var getStartedButton: some View {
+        Button(action: {
+            // Handle onboarding completion
+        }) {
+            Text(Lang.onboardingGetStartedButton)
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(
+                    LinearGradient(
+                        gradient: Gradient(colors: [Color.purple, Color.blue]),
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .cornerRadius(.CornerRadius.softRound)
+                .shadow(color: Color.purple.opacity(.Opacity.semiOpaque), radius: .CornerRadius.softRound)
+        }
+        .padding(.horizontal, .Space.l + .Space.m)
+        .padding(.bottom, .Space.xl + .Space.m)
     }
 }
 
