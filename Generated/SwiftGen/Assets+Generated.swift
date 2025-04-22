@@ -26,7 +26,11 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
   internal static let swiftLab = ImageAsset(name: "SwiftLab")
-  internal static let onboardingSwiftLab = ImageAsset(name: "OnboardingSwiftLab")
+  internal static let onboardingAppIcon = ImageAsset(name: "onboarding-app-icon")
+  internal static let onboardingExperimentIcon = ImageAsset(name: "onboarding-experiment-icon")
+  internal static let onboardingFuturIconFull = ImageAsset(name: "onboarding-futur-icon-full")
+  internal static let onboardingFuturIcon = ImageAsset(name: "onboarding-futur-icon")
+  internal static let onboardingSwiftLab = ImageAsset(name: "onboarding-swift-lab")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

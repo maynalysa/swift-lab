@@ -11,15 +11,15 @@ import SwiftUI
 struct OnboardingPage {
     let title: String
     let subtitle: String
-    let imageName: String
+    let image: ImageAsset
 }
 
 // MARK: - ViewState
 struct OnboardingViewState {
     var pages: [OnboardingPage] = []
-    var currentIndex: Int = 0
+    var currentIndex = 0
     var isLastPage: Bool { currentIndex == pages.count - 1 }
-    
+
     enum ViewAction {
         case navigateToPage(index: Int)
         case completeOnboarding
@@ -27,19 +27,31 @@ struct OnboardingViewState {
 }
 
 // MARK: - ViewModel
-class OnboardingViewModel: ObservableObject {
+final class OnboardingViewModel: ObservableObject {
     @Published private(set) var state: OnboardingViewState
-    
+
     init() {
         let pages = [
-            OnboardingPage(title: "Welcome to SwiftLab!", subtitle: "Build and launch Swift apps with blazing speed.", imageName: "swiftlab_logo"),
-            OnboardingPage(title: "Experiment Freely", subtitle: "Your dev lab for prototyping, learning, and growing.", imageName: "swiftlab_logo"),
-            OnboardingPage(title: "Join the Future", subtitle: "Transform your ideas into powerful Swift experiences.", imageName: "swiftlab_logo")
+            OnboardingPage(
+                title: "Welcome to SwiftLab!",
+                subtitle: "Build and launch Swift apps with blazing speed.",
+                image: Asset.onboardingSwiftLab
+            ),
+            OnboardingPage(
+                title: "Experiment Freely",
+                subtitle: "Your dev lab for prototyping, learning, and growing.",
+                image: Asset.onboardingExperimentIcon
+            ),
+            OnboardingPage(
+                title: "Join the Future",
+                subtitle: "Transform your ideas into powerful Swift experiences.",
+                image: Asset.onboardingFuturIconFull
+            )
         ]
-        
+
         self.state = OnboardingViewState(pages: pages)
     }
-    
+
     func handle(_ action: OnboardingViewState.ViewAction) {
         switch action {
         case .navigateToPage(let index):

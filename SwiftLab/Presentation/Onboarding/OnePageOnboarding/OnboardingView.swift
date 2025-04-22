@@ -12,16 +12,18 @@ struct OnboardingView: View {
         ZStack {
             gradientBackground
 
-            VStack(spacing: .Space.l + .Space.m) {
-                swiftLabIcon
-
+            VStack(spacing: .Space.xxl) {
                 title
+    
+                swiftLabIcon
 
                 subTitle
 
                 welcomeText
 
                 Spacer()
+                
+                getStartedButton
             }
             .padding(.top, .Space.xxl + .Space.m)
         }
