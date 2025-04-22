@@ -14,7 +14,7 @@ struct OnboardingView: View {
 
             VStack(spacing: .Space.xxl) {
                 title
-    
+
                 swiftLabIcon
 
                 subTitle
@@ -22,7 +22,7 @@ struct OnboardingView: View {
                 welcomeText
 
                 Spacer()
-                
+
                 getStartedButton
             }
             .padding(.top, .Space.xxl + .Space.m)

@@ -23,7 +23,7 @@ struct SwiftLabTabBarView: View {
                 // Custom Tab Bar Background
                 // Tab bar background with deep blue & neon glow
                 RoundedRectangle(cornerRadius: 25)
-                    .fill(Color(red: 20/255, green: 20/255, blue: 50/255)) // deep indigo/navy base
+                    .fill(Color(red: 20 / 255, green: 20 / 255, blue: 50 / 255)) // deep indigo/navy base
                     .overlay(
                         RoundedRectangle(cornerRadius: 25)
                             .stroke(Color.cyan.opacity(0.6), lineWidth: 1.5)
@@ -55,32 +55,31 @@ struct SwiftLabTabBarView: View {
                     TabBarItem(icon: "folder.fill", label: "Projects", tab: .projects, selectedTab: $selectedTab)
 
                     // Center glowing Lab button
-                    ZStack {
-                        Circle()
-                            .fill(
-                                LinearGradient(
-                                    gradient: Gradient(colors: [Color.purple, Color.cyan]),
-                                    startPoint: .top,
-                                    endPoint: .bottom
+                    Button(action: { selectedTab = .lab }) {
+                        ZStack {
+                            Circle()
+                                .fill(
+                                    LinearGradient(
+                                        gradient: Gradient(colors: [Color.purple, Color.cyan]),
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    )
                                 )
-                            )
-                            .frame(width: 64, height: 64)
-                            .shadow(color: Color.cyan.opacity(0.6), radius: 12)
+                                .frame(width: 64, height: 64)
+                                .shadow(color: Color.cyan.opacity(0.6), radius: 12)
 
-                        Image(systemName: "flask.fill")
-                            .font(.system(size: 24))
-                            .foregroundColor(.white)
-                            .shadow(color: Color.cyan.opacity(0.5), radius: 10)
-//                        Image(systemName: "flask.fill")
-//                            .font(.system(size: 24))
-//                            .foregroundColor(.white)
+                            Image(systemName: "flask.fill")
+                                .font(.system(size: 24))
+                                .foregroundColor(.white)
+                                .shadow(color: Color.cyan.opacity(0.5), radius: 10)
+                            //                        Image(systemName: "flask.fill")
+                            //                            .font(.system(size: 24))
+                            //                            .foregroundColor(.white)
+                        }
+                        .offset(y: -28)
+                        .scaleEffect(selectedTab == .lab ? 1.1 : 1.0)
+                        .animation(.easeInOut(duration: 0.3), value: selectedTab)
                     }
-                    .offset(y: -28)
-                    .onTapGesture {
-                        selectedTab = .lab
-                    }
-                    .scaleEffect(selectedTab == .lab ? 1.1 : 1.0)
-                    .animation(.easeInOut(duration: 0.3), value: selectedTab)
 
                     TabBarItem(icon: "person.crop.circle.fill", label: "About", tab: .about, selectedTab: $selectedTab)
                 }

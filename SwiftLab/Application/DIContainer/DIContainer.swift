@@ -67,13 +67,12 @@ struct DefaultDIContainer: ApplicationDIContainer {
 // MARK: - Usage
 final class UserPresenter {
     typealias UserPresenterDependencies = HasUserService & HasLoggingService & HasNetworkService
-    
     private let dependencies: UserPresenterDependencies
-    
+
     init(dependencies: UserPresenterDependencies) {
         self.dependencies = dependencies
     }
-    
+
     func processUser() async {
         let user = dependencies.userService.getCurrentUser() //🎊
         dependencies.loggingService.log("User : \(user)") //🎊

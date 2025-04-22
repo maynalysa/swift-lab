@@ -15,19 +15,18 @@ struct TabBarItem: View {
     @Binding var selectedTab: SwiftLabTabBarView.Tab
 
     var body: some View {
-        VStack(spacing: 4) {
-            Image(systemName: icon)
-                .font(.system(size: 20))
-                .foregroundColor(selectedTab == tab ? Color.cyan : Color.white.opacity(0.5))
+        Button(action: { selectedTab = tab }) {
+            VStack(spacing: 4) {
+                Image(systemName: icon)
+                    .font(.system(size: 20))
+                    .foregroundColor(selectedTab == tab ? Color.cyan : Color.white.opacity(0.5))
 
-            Text(label)
-                .font(.caption2)
-                .foregroundColor(selectedTab == tab ? Color.cyan : Color.white.opacity(0.5))
-                .foregroundColor(selectedTab == tab ? Color.cyan : Color.white.opacity(0.6))
-        }
-        .frame(minWidth: 40)
-        .onTapGesture {
-            selectedTab = tab
+                Text(label)
+                    .font(.caption2)
+                    .foregroundColor(selectedTab == tab ? Color.cyan : Color.white.opacity(0.5))
+                    .foregroundColor(selectedTab == tab ? Color.cyan : Color.white.opacity(0.6))
+            }
+            .frame(minWidth: 40)
         }
     }
 }

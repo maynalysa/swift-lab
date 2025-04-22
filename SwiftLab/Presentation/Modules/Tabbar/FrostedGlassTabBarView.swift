@@ -49,22 +49,23 @@ struct FrostedGlassTabBarView: View {
         HStack(spacing: 60) {
             FrostedTabItem(icon: "folder.fill", label: "Projects", tab: .projects, selectedTab: $selectedTab)
 
-            ZStack {
-                Circle()
-                    .fill(LinearGradient(
-                        gradient: Gradient(colors: [Color.purple, Color.cyan]),
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    ))
-                    .frame(width: 58, height: 58)
-                    .shadow(color: Color.cyan.opacity(0.4), radius: 8)
+            Button(action: { selectedTab = .lab }) {
+                ZStack {
+                    Circle()
+                        .fill(LinearGradient(
+                            gradient: Gradient(colors: [Color.purple, Color.cyan]),
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ))
+                        .frame(width: 58, height: 58)
+                        .shadow(color: Color.cyan.opacity(0.4), radius: 8)
 
-                Image(systemName: "flask.fill")
-                    .font(.system(size: 22))
-                    .foregroundColor(.white)
+                    Image(systemName: "flask.fill")
+                        .font(.system(size: 22))
+                        .foregroundColor(.white)
+                }
+                .offset(y: -20)
             }
-            .offset(y: -20)
-            .onTapGesture { selectedTab = .lab }
 
             FrostedTabItem(icon: "person.fill", label: "About", tab: .about, selectedTab: $selectedTab)
         }
