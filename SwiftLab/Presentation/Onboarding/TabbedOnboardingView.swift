@@ -7,24 +7,13 @@
 
 import SwiftUI
 
-// MARK: - ⚠️❌⚠️❌⚠️❌⚠️❌⚠️❌ ONGOING CHANGES ⚠️❌⚠️❌⚠️❌⚠️❌⚠️❌
-struct OnboardingPage {
-    let title: String
-    let subtitle: String
-    let imageName: String
-}
-
+// MARK: - View
 struct TabbedOnboardingView: View {
-    let pages: [OnboardingPage] = [
-        OnboardingPage(title: "Welcome to SwiftLab!", subtitle: "Build and launch Swift apps with blazing speed.", imageName: "swiftlab_logo"),
-        OnboardingPage(title: "Experiment Freely", subtitle: "Your dev lab for prototyping, learning, and growing.", imageName: "swiftlab_logo"),
-        OnboardingPage(title: "Join the Future", subtitle: "Transform your ideas into powerful Swift experiences.", imageName: "swiftlab_logo")
-    ]
-
-    @State private var currentIndex = 0
+    @StateObject private var viewModel = OnboardingViewModel()
 
     var body: some View {
         ZStack {
+            // Background gradient
             LinearGradient(
                 gradient: Gradient(colors: [
                     Color.purple.opacity(0.7),
@@ -38,38 +27,23 @@ struct TabbedOnboardingView: View {
             .ignoresSafeArea()
 
             VStack {
-                TabView(selection: $currentIndex) {
-                    ForEach(pages.indices, id: \.self) { index in
-                        VStack(spacing: 24) {
-                            Image(pages[index].imageName)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 160, height: 160)
-                                .shadow(color: Color.pink.opacity(0.7), radius: 20)
-
-                            Text(pages[index].title)
-                                .font(.title)
-                                .bold()
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-
-                            Text(pages[index].subtitle)
-                                .font(.body)
-                                .foregroundColor(.white.opacity(0.85))
-                                .multilineTextAlignment(.center)
-                                .padding(.horizontal, 32)
-                        }
-                        .tag(index)
-                        .padding(.top, 80)
+                TabView(selection: Binding<Int>(
+                    get: { viewModel.state.currentIndex },
+                    set: { viewModel.handle(.navigateToPage(index: $0)) }
+                )) {
+                    ForEach(viewModel.state.pages.indices, id: \.self) { index in
+                        OnboardingPageView(page: viewModel.state.pages[index])
+                            .tag(index)
+                            .padding(.top, 80)
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
 
                 Spacer()
 
-                if currentIndex == pages.count - 1 {
+                if viewModel.state.isLastPage {
                     Button(action: {
-                        // Handle onboarding completion
+                        viewModel.handle(.completeOnboarding)
                     }) {
                         Text("Get Started")
                             .font(.headline)
@@ -88,8 +62,37 @@ struct TabbedOnboardingView: View {
                     }
                     .padding(.horizontal, 32)
                     .padding(.bottom, 40)
+                    .animation(.easeInOut(duration: 2.0), value: viewModel.state.isLastPage)
                 }
             }
+        }
+        
+    }
+}
+
+// MARK: - Page View Component
+struct OnboardingPageView: View {
+    let page: OnboardingPage
+
+    var body: some View {
+        VStack(spacing: 24) {
+            Image(page.imageName)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 160, height: 160)
+                .shadow(color: Color.pink.opacity(0.7), radius: 20)
+
+            Text(page.title)
+                .font(.title)
+                .bold()
+                .foregroundColor(.white)
+                .multilineTextAlignment(.center)
+
+            Text(page.subtitle)
+                .font(.body)
+                .foregroundColor(.white.opacity(0.85))
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 32)
         }
     }
 }
