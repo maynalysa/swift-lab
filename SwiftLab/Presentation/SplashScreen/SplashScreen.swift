@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+
+// MARK: - ⚠️❌⚠️❌⚠️❌⚠️❌⚠️❌ ONGOING CHANGES ⚠️❌⚠️❌⚠️❌⚠️❌⚠️❌
+
 struct SplashScreen: View {
     // Optional state for animation or transition timing
     @State private var isActive = false
